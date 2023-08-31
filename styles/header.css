@@ -1,0 +1,18 @@
+.cabecalho_atletismo{
+    width: 24px;
+    height:37 px;
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+}
+
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
