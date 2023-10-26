@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Atletismo</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+<header class="cabecalho">
+    <div classe="container">
+        <input type="checkbox" id="menu" class="container_botao"> 
+        <label for="menu">
+    <span class="cabecalho_atletismo container_imagem"></span>
+</label>
+<ul class="lista-menu"> 
+    <li class="lista-menu_titulo">Categorias</li>
+    <li class="lista-menu_item">
+        <a href="#" class="lista-menu_link">Provas de pista</a>
+    </li>
+<li class="lista-menu_item">
+    <a href="#" class="lista-menu_link">Lançamentos e arremessos</a>
+</li>
+    <li class="lista-menu_item">
+        <a href="#" class="lista-menu_link">Saltos</a>
+    </li>
+    <li class="lista-menu_item">
+        <a href="#" class="lista-menu_link">Rankig</a>
+    </li>
+    <li class="lista-menu_item">
+        <a href="#" class="lista-menu_link">Melhores do Brasil</a>
+    </li>
+</ul>
+<img src="img/logoatle.png" alt="logo atlestismo" class="container_imagem"> 
+    </div>
+</ul>
+    <div class="container">
+<a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container_imagem"></a>
+<a href="#"><img src="img/Compras.svg" alt="carrinhos de compras"></a>
+<a href="#"><img src="img/Usuario.svg" alt="meu perfil" class="container_imagem"></a>
+    </div>
+</header>
+<section class="banner"> 
+    <h2 class="banner__titulo">Ja conhece as modalidades do atletismo?</h2>
+    <p class="banner__texto">Encontre em nosso site as diversas modalidades</p>
+    <input type="search" class="banner__pesquisa" placeholder=" Qual modalidade quer conhecer?">
+</section>
+<section class="carrossel">
+    <h2 class="carrosel__titulo">Modalidades atletismo</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/barreira.jpg" alt="provas de pista"></div>
+      <div class="swiper-slide"><img src="img/provas-lançamentos-atletismo.jpg" alt="provas de lançamento"></div>
+      <div class="swiper-slide"><img src="img/paralimpico.jpg" alt="provas de saltos"></div>
+      <div class="swiper-slide"> <img src="img/rankig.jpg" alt="rankig"></div>
+      <div class="swiper-slide"><img src="img/melhores.jpg" alt=""></div>
+    </div>
+   
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+<div class="card">
+    <!-- 1° linha -->
+    <div class="card_descrição">
+        <!-- 1° coluna -->
+        <div class="descrição">
+            <h3 class="descrição__titulo"> Talvez você também e interesse por...</h3>
+            <h2 class="descrição__titulo-Livro">Atletismo paralímpico</h2>
+            <p class="desrição__texto"> O atletismo paralímpico é um esporte praticado por atletas com deficência fisica e interlectual</p>
+        </div>
+        <!-- 2° coluna -->
+        <img src="img/images.jpeg" class="descrição__imagem">
+    </div>
+
+    <!-- 2° linha -->
+    <div class="car__botões">
+        <!-- 1° coluna -->
+        <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compra"></li>
+        </ul>
+        <!-- 2° coluna -->
+        <a href="#" class="botõe__ancorra">Saiba mais</a>
+    </div>
+</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+</script>
+    </body>
+
+</html>
