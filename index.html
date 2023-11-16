@@ -44,13 +44,13 @@
     <div class="container">
 <a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container_imagem"></a>
 <a href="#"><img src="img/Compras.svg" alt="carrinhos de compras"></a>
-<a href="#"><img src="img/Usuario.svg" alt="meu perfil" class="container_imagem"></a>
+<a href="#"><img src="img/Usuário.svg" alt="meu perfil" class="container_imagem"></a>
     </div>
 </header>
 <section class="banner"> 
     <h2 class="banner__titulo">Ja conhece as modalidades do atletismo?</h2>
     <p class="banner__texto">Encontre em nosso site as diversas modalidades</p>
-    <input type="search" class="banner__pesquisa" placeholder=" Qual modalidade quer conhecer?">
+    <input type="search" class="banner__pesquisa" placeholder="Qual modalidade quer conhecer?">
 </section>
 <section class="carrossel">
     <h2 class="carrosel__titulo">Modalidades atletismo</h2>
@@ -62,11 +62,16 @@
 
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="img/barreira.jpg" alt="provas de pista"></div>
-      <div class="swiper-slide"><img src="img/provas-lançamentos-atletismo.jpg" alt="provas de lançamento"></div>
-      <div class="swiper-slide"><img src="img/3970541.jpg" alt="provas de saltos"></div>
-      <div class="swiper-slide"> <img src="img/rankig.jpg" alt="rankig"></div>
-      <div class="swiper-slide"><img src="img/melhores.jpg" alt=""></div>
+      <div class="swiper-slide">
+        <img src="img/barreira.jpg" alt="provas de pista"></div>
+      <div class="swiper-slide">
+        <img src="img/provas-lançamentos-atletismo.jpg" alt="provas de lançamento"></div>
+      <div class="swiper-slide">
+        <img src="img/3970541.jpg" alt="provas de saltos"></div>
+      <div class="swiper-slide">
+        <img src="img/rankig.jpg" alt="rankig"></div>
+      <div class="swiper-slide">
+        <img src="img/melhores.jpg" alt=""></div>
     </div>
    
     <!-- If we need navigation buttons -->
@@ -99,13 +104,38 @@
   </div>
 </section>
 
+<section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+        <li class="tópicos__item">
+            <a href="#" class="tópicos__link">Lançamento de martelo</a>
+        </li>
+        <li class="tópicos__item">
+            <a href="#" class="tópicos__link">Provas de pista</a>
+        </li>
+        <li class="tópicos__item">
+            <a href="#" class="tópicos__link">Competições mais recentes</a>
+        </li>
+        <li class="tópicos__item">
+            <a href="#" class="tópicos__link">Atletismo 2023</a>
+        </li>
+        
+        <li class="tópicos__item">
+            <a href="#" class="tópicos__link">Copa atletismo</a>
+        </li>
+    </ul>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
-  
   spaceBetween: 10,
   slidesPerView: 3,
-});
+  pagination: {
+    el: '.wiper-pagination',
+    type: 'bullets',
+  }
+    });
 </script>
     </body>
 
